@@ -1,0 +1,136 @@
+// Font Family 
+// Josefin Sans 200 300 400
+$font-family: 'Josefin Sans',
+sans-serif;
+// Raleway Sans 200 300 400 600
+$secondary-font-family:'Raleway',
+sans-serif;
+
+// Base Font for HTML
+$base-font-size: 10px;
+
+//Colors
+$main-color: rgb(230, 38, 73);
+// Paragraph Styles
+$paragraph-color : #505050;
+$paragraph-size : 1.6rem;
+$paragraph-line-height: 1.5em;
+$paragraph-margin : 20px;
+
+// Header Styles
+$header-color : #000000;
+$header-size : 3.5rem;
+$header-line-height: 1.25em;
+$header-margin : $paragraph-margin * 1.2;
+
+// Links
+$link-color: #459bd9;
+
+// hr
+$hr-margin: 30px;
+
+//Font Weights
+$x-light: 200;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$xbold: 800;
+
+// Portrait
+$p-ex-small : (orintation: portrait) and (min-width:360px);
+$p-small : (orintation: portrait) and (min-width:640px);
+$p-medium : (orintation: portrait) and (min-width:768px);
+$p-large : (orintation: portrait) and (min-width:1024px);
+$p-ex-large : (orintation: portrait) and (min-width:1280px);
+
+
+//Landscape
+$landscape: (orientation: landscape);
+$l-small : (orintation: landscape) and (min-width:640px);
+$l-large : (orintation: landscape) and (min-width:1024px);
+$l-ex-large : (orintation: landscape) and (min-width:1280px);
+
+// Hover
+$h-desktop: (min-width:1024px); // Reset
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: $base-font-size;
+    font-family: $secondary-font-family;
+}
+
+
+// Headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: $header-margin * 1.5;
+    color: $header-color;
+    line-height: $header-line-height;
+    font-weight: $normal;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+h1 {
+    font-size: $header-size;
+    margin-bottom: $header-margin;
+}
+
+h2 {
+    font-size: $header-size / 1.3;
+    margin-bottom: $header-margin / 1.3;
+}
+
+h3 {
+    font-size: $header-size / 1.5;
+    margin-bottom: $header-margin / 1.5;
+}
+
+h4 {
+    font-size: $header-size / 1.7;
+    margin-bottom: $header-margin / 1.7;
+}
+
+h5 {
+    font-size: $header-size / 1.8;
+    margin-bottom: $header-margin / 1.8;
+}
+
+h6 {
+    font-size: $header-size / 2;
+    margin-bottom: $header-margin / 2;
+}
+
+
+
+// Paragraphs
+p {
+    margin-bottom: $paragraph-margin;
+    font-size: $paragraph-size;
+    line-height: $paragraph-line-height;
+    color: $paragraph-color;
+    font-weight: $light;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+// 
+ul {
+    list-style: none;
+}
